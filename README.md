@@ -38,3 +38,97 @@ The concepts of Constructor and Destructor are demonstrated by the following cod
 + volume using parrameterized constructor
 + copy constructor
 + Destructor using counters
+
+  # Algorithms:
+    Destructors:
+  
+     Step 1: Start
+  
+     Step 2: Create a class named Destruct
+
+     + Declare a static integer variable count to keep track of the number of objects.
+
+     + This variable is shared by all objects of the class.
+
+     Step 3: Define a Constructor
+
+     + When an object is created:
+
+     + Increase the value of count by 1
+
+     + Print a message:
+       
+    + "Object created. Total objects: <count>"
+
+    Step 4: Define a Destructor
+
+    + When an object is destroyed:
+
+    + Decrease the value of count by 1
+
+    + Print a message:
+      
+    + "Object destroyed. Remaining objects: <count>"
+
+    Step 5: In the main() function
+
+    + Create four objects: a1, b1, c1, s1
+
+    + Each time an object is created, the constructor runs and count increases.
+
+    Step 6: End of main() function
+
+    + When the program ends, all local objects go out of scope.
+
+    + The destructor is automatically called for each object in reverse order of creation.
+ 
+    Volume info:
+  
+     Step 1: Start
+  
+     Step 2: Create a class called volume
+
+     + Inside the class:
+
+     + Declare 3 integer variables for dimensions (x, y, z)
+
+     + Declare a double variable vol to store the volume
+
+     Step 3: Define a Constructor
+
+     + Constructor takes 3 arguments: l, b, and h (length, breadth, height)
+
+     + Calculate volume using formula:
+       
+     + vol = l × b × h
+
+    + Store the result in the vol variable
+
+   Step 4: Define a display() function
+
+   + This function prints the calculated volume
+
+   Step 5: In the main() function
+
+    + Declare 3 integer variables: a, b, c
+
+    + Ask the user to enter values for length, breadth, and height
+
+    + Read the values using cin
+
+  Step 6: Create an object of the class
+
+    + Create object v1 using values a, b, and c
+
+    + This automatically calls the constructor and calculates the volume
+
+   Step 7: Call the display() function
+
+    + Display the calculated volume on the screen
+
+   Step 8: End the program
+
+  # Conclusion:
+The above codes demonstrates the use of constructors and destructors in C++.
+
+   
